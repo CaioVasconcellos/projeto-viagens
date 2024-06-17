@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  mysql:
+    image: mysql
+    environment:
+      - 'MYSQL_DATABASE=MySQL'
+      - 'MYSQL_ROOT_PASSWORD=root'
+      - 'MYSQL_USER=adm'
+    ports:
+      - '3306:3306'
+    volumes:
+      - viagens_data:/var/lib/mysql
+volumes:
+  viagens_data:
