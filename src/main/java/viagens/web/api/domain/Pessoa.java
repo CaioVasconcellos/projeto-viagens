@@ -41,5 +41,9 @@ public class Pessoa {
     @JsonManagedReference
     private List<PessoaTelefone> pessoaTelefone;
 
+    @OneToMany(mappedBy = "pessoa", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.LAZY)
+    @JsonManagedReference
+    private List<Reserva> reserva;
+
 }
 

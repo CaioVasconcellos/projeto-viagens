@@ -79,7 +79,7 @@ public class PessoaController {
 
     @Operation(summary = "Criar usuário")
     @PostMapping
-    public ResponseEntity<viagens.web.api.domain.Pessoa> saveAllInformations (@RequestBody PessoaPostRequestDTO pessoaRequestDTO){
+    public ResponseEntity<Pessoa> saveAllInformations (@RequestBody PessoaPostRequestDTO pessoaRequestDTO){
         return new ResponseEntity<>(pessoaService.saveAllInformations(pessoaRequestDTO), HttpStatus.CREATED);
     }
 

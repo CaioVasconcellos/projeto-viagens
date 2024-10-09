@@ -30,7 +30,7 @@ public class PessoaService {
     private final PessoaEnderecoRepository pessoaEnderecoRepository;
     private final PessoaTelefoneRepository pessoaTelefoneRepository;
 
-    public viagens.web.api.domain.Pessoa save(PessoaPostRequestBody pessoaPostRequestBody){
+    public Pessoa save(PessoaPostRequestBody pessoaPostRequestBody){
         Pessoa pessoa = PessoaMapper.INSTANCE.toPessoa(pessoaPostRequestBody);
         return pessoaRepository.save(pessoa);
     }

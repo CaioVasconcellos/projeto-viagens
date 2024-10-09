@@ -4,14 +4,9 @@ import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 import viagens.web.api.domain.Pessoa;
-import viagens.web.api.domain.PessoaEndereco;
-import viagens.web.api.domain.PessoaTelefone;
-import viagens.web.api.requests.PessoaEnderecoPostRequestBody;
 import viagens.web.api.requests.PessoaPostRequestBody;
 import viagens.web.api.requests.PessoaPutRequestBody;
-import viagens.web.api.requests.PessoaTelefonePostRequestBody;
 
-import java.util.List;
 
 @Mapper(componentModel = "spring")
 public abstract class PessoaMapper {
